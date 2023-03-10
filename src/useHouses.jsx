@@ -11,9 +11,9 @@ const useHouses = () => {
   useEffect(() => {
     const callHousesApi = async () => {
       const { houses, count } = await fetchApi(
-        "https://houses-api.vercel.app/getHouses"
+        // "https://houses-api.vercel.app/getHouses"
+        "http://localhost/getHouses"
       );
-      // "http://localhost/getHouses"
       setHouses(houses);
       console.log("casas bajadas de precio", count);
     };

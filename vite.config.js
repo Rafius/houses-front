@@ -5,9 +5,6 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  server: {
-    open: "http://localhost:3000/"
-  },
   plugins: [react(), reactRefresh(), macrosPlugin()],
   resolve: {
     alias: {
